@@ -1,0 +1,25 @@
+locals {
+  appdata = jsondecode(file("applications.json"))
+  apps = { for app,v in local.appdata.applications : app => v }
+}
+
+resource "null_resource" "ch" {
+  for_each = local.apps
+  provisioner "local-exec" {
+  working_dir = "/root/kt"
+  command = "echo ${each.value.name} >> rm.txt"
+}
+}
+
+
+
+#resource "local_file" "foo" {
+#  for_each = local.apps  
+#  content  = "rasm"
+#  filename = "${path.module}/foo"
+#}
+
+
+output "check_variable" {
+  value = local.apps
+}

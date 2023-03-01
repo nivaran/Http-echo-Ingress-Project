@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: ng2
+  name: ng2
+spec:
+  containers:
+  - args: 
+    - -listen=:8080
+    - -text="I am Green"
+    image: hashicorp/http-echo
+    name: ng2
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
