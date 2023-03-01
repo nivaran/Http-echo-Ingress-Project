@@ -2,6 +2,14 @@ Installing minikube
 deploying two http-echo deployments with replicas using terraform 
 and routing traffic with ingress
 
+steps :
+install minikube
+terraform init > terrafom plan -out main.plan > terraform apply main.plan
+in this terraform version or kubernetes api version, ingress is not working , use single_ingress file for configuring it outside terraform without canary, canary is 
+also not supporting
+
+after configuring outside ingress, need to add minikube ip to /etc/hosts to curl ip    to get that page on 80 
+
 references :
 https://github.com/pr26849/K8s-TF/blob/main/TF/deploy.tf
 https://github.com/cloudtechmasters/Canary-Deployments-with-NGINX-Ingress-Controller/blob/main/deploy/canary-ingress.yaml
