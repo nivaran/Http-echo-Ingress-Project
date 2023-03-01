@@ -1,0 +1,21 @@
+Installing minikube 
+deploying two http-echo deployments with replicas using terraform 
+and routing traffic with ingress
+
+references :
+https://github.com/pr26849/K8s-TF/blob/main/TF/deploy.tf
+https://github.com/cloudtechmasters/Canary-Deployments-with-NGINX-Ingress-Controller/blob/main/deploy/canary-ingress.yaml
+
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service
+https://support.huaweicloud.com/intl/en-us/bestpractice-cce/cce_bestpractice_10003.html
+https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release
+https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/ingress_v1
+
+https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
+https://docs.d2iq.com/dkp/2.3/configure-ingress-for-load-balancing
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+https://docs.mirantis.com/mke/3.6/ops/deploy-apps-k8s/nginx-ingress/configure-canary-deployment.html
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/ingress
